@@ -64,6 +64,12 @@
 						</div>
 						<div id="sloveso_4_njperfektum_help" class="form-text">např. er ist abgebogen</div>
 					</div>
+					<div class="form-check" style="margin-bottom: 15px;">
+						<input class="form-check-input" type="checkbox" id="check-preklad">
+						<label class="form-check-label" for="check-preklad">
+							Nechci se učit překlad
+						</label>
+					  </div>
 				</div>
 				<div class="tab-pane fade" id="pills-haben" role="tabpanel" aria-labelledby="pills-haben-tab" tabindex="0">
 					<div class="mb-3" style="margin-top:10px">
@@ -81,6 +87,7 @@
 						<div id="sloveso_6_nj_help" class="form-text">např. habe</div>
 					</div>
 				</div>
+
 			  </div>
 			<button type="submit" class="btn btn-primary" onclick="CheckIt();">Zkontrolovat</button>
 			<button type="submit" class="btn btn-warning" onclick="Reveal();">Prozradit</button>
@@ -146,6 +153,12 @@
 				$("#sloveso_3_njpreteritum_addon").text(GetSuperText(fields[2].split(/ (.*)/)[0]));
 				$("#sloveso_4_njperfektum_addon").text(GetSuperText(fields[3].split(/ (.*)/)[0]));
 				$("#sloveso_5_nj").val(fields[3].split(/ (.*)/)[0] + " ... " + fields[3].split(" ").slice(2).join(" "));
+				if ($('#check-preklad').is(':checked')) {
+					$("#sloveso_2_nj").val(fields[1].split('–')[0]);
+					console.log("yes")
+				} else {
+					console.log("no")
+				}
 			}
 			
 			function CheckIt() {
