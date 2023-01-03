@@ -19,41 +19,69 @@
 			</div>
 		</nav>
 		<div class="container">
-			<div class="mb-3">
-				<label for="sloveso_1_cz" class="form-label">Česky</label>
-				<input type="text" class="form-control" id="sloveso_1_cz" aria-describedby="sloveso_1_cz_help" disabled>
-				<div class="valid-feedback">😍 Je to dobře, frajere!</div>
-				<div id="sloveso_1_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
-				<div id="sloveso_1_cz_help" class="form-text">např. zahnout</div>
-			</div>
-			<div class="mb-3">
-				<label for="sloveso_2_nj" class="form-label">Německy</label>
-				<input type="text" class="form-control" id="sloveso_2_nj" aria-describedby="sloveso_2_nj_help">
-				<div class="valid-feedback">😍 Je to dobře, frajere!</div>
-				<div id="sloveso_2_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
-				<div id="sloveso_2_nj_help" class="form-text">např. abbiegen</div>
-			</div>
-			<div class="mb-3">
-				<label for="sloveso_3_njpreteritum" class="form-label">Préteritum</label>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="sloveso_3_njpreteritum_addon">er</span>
-					<input type="text" class="form-control" id="sloveso_3_njpreteritum" aria-describedby="sloveso_3_njpreteritum_help" aria-describedby="sloveso_3_njpreteritum_addon">
-					<div class="valid-feedback">😍 Je to dobře, frajere!</div>
-					<div id="sloveso_3_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+			<ul class="nav nav-tabs nav-fill" id="pills-tab" role="tablist" style="margin-top:10px">
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Všechno</button>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link" id="pills-haben-tab" data-bs-toggle="pill" data-bs-target="#pills-haben" type="button" role="tab" aria-controls="pills-haben" aria-selected="false">haben/sein</button>
+				</li>
+			  </ul>
+			  <div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+					<div class="mb-3" style="margin-top:10px">
+						<label for="sloveso_1_cz" class="form-label">Česky</label>
+						<input type="text" class="form-control" id="sloveso_1_cz" aria-describedby="sloveso_1_cz_help" disabled>
+						<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+						<div id="sloveso_1_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						<div id="sloveso_1_cz_help" class="form-text">např. zahnout</div>
+					</div>
+					<div class="mb-3">
+						<label for="sloveso_2_nj" class="form-label">Německy</label>
+						<input type="text" class="form-control" id="sloveso_2_nj" aria-describedby="sloveso_2_nj_help">
+						<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+						<div id="sloveso_2_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						<div id="sloveso_2_nj_help" class="form-text">např. abbiegen</div>
+					</div>
+					<div class="mb-3">
+						<label for="sloveso_3_njpreteritum" class="form-label">Préteritum</label>
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="sloveso_3_njpreteritum_addon">er</span>
+							<input type="text" class="form-control" id="sloveso_3_njpreteritum" aria-describedby="sloveso_3_njpreteritum_help" aria-describedby="sloveso_3_njpreteritum_addon">
+							<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+							<div id="sloveso_3_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						</div>
+						
+						<div id="sloveso_3_njpreteritum_help" class="form-text">např. er bog ab</div>
+					</div>
+					<div class="mb-3">
+						<label for="sloveso_4_njperfektum" class="form-label">Perfektum</label>
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="sloveso_4_njperfektum_addon">er</span>
+							<input type="text" class="form-control" id="sloveso_4_njperfektum" aria-describedby="sloveso_4_njperfektum_help" aria-describedby="sloveso_4_njperfektum_addon">
+							<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+							<div id="sloveso_4_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						</div>
+						<div id="sloveso_4_njperfektum_help" class="form-text">např. er ist abgebogen</div>
+					</div>
 				</div>
-				
-				<div id="sloveso_3_njpreteritum_help" class="form-text">např. er bog ab</div>
-			</div>
-			<div class="mb-3">
-				<label for="sloveso_4_njperfektum" class="form-label">Perfektum</label>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="sloveso_4_njperfektum_addon">er</span>
-					<input type="text" class="form-control" id="sloveso_4_njperfektum" aria-describedby="sloveso_4_njperfektum_help" aria-describedby="sloveso_4_njperfektum_addon">
-					<div class="valid-feedback">😍 Je to dobře, frajere!</div>
-					<div id="sloveso_4_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+				<div class="tab-pane fade" id="pills-haben" role="tabpanel" aria-labelledby="pills-haben-tab" tabindex="0">
+					<div class="mb-3" style="margin-top:10px">
+						<label for="sloveso_5_nj" class="form-label">Německy</label>
+						<input type="text" class="form-control" id="sloveso_5_nj" aria-describedby="sloveso_5_nj_help" disabled>
+						<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+						<div id="sloveso_5_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						<div id="sloveso_5_nj_help" class="form-text">např. ich ... gesungen</div>
+					</div>
+					<div class="mb-3">
+						<label for="sloveso_6_nj" class="form-label">haben/sein</label>
+						<input type="text" class="form-control" id="sloveso_6_nj" aria-describedby="sloveso_6_nj_help">
+						<div class="valid-feedback">😍 Je to dobře, frajere!</div>
+						<div id="sloveso_6_cz_bad" class="invalid-feedback">😭 Je to špatně, musíš se víc učit!</div>
+						<div id="sloveso_6_nj_help" class="form-text">např. habe</div>
+					</div>
 				</div>
-				<div id="sloveso_4_njperfektum_help" class="form-text">např. er ist abgebogen</div>
-			</div>
+			  </div>
 			<button type="submit" class="btn btn-primary" onclick="CheckIt();">Zkontrolovat</button>
 			<button type="submit" class="btn btn-warning" onclick="Reveal();">Prozradit</button>
 			<button type="submit" class="btn btn-danger" onclick="GenerateNew();">Vygenerovat další</button>
@@ -117,6 +145,7 @@
 				$("#sloveso_1_cz").val(fields[0]);
 				$("#sloveso_3_njpreteritum_addon").text(GetSuperText(fields[2].split(/ (.*)/)[0]));
 				$("#sloveso_4_njperfektum_addon").text(GetSuperText(fields[3].split(/ (.*)/)[0]));
+				$("#sloveso_5_nj").val(fields[3].split(/ (.*)/)[0] + " ... " + fields[3].split(" ").slice(2).join(" "));
 			}
 			
 			function CheckIt() {
@@ -140,12 +169,19 @@
 					} else {
 					$("#sloveso_4_njperfektum").addClass('is-invalid');
 				}
+				
+				if (GetSuperText($("#sloveso_6_nj").val()) == GetSuperText(fields[3].split(" ")[1])) {
+					$("#sloveso_6_nj").addClass('is-valid');
+					} else {
+					$("#sloveso_6_nj").addClass('is-invalid');
+				}
 			}
 			
 			function Reveal() {
 				$("#sloveso_2_nj").val(fields[1].split('–')[0])
 				$("#sloveso_3_njpreteritum").val(fields[2].split(/ (.*)/)[1])
 				$("#sloveso_4_njperfektum").val(fields[3].split(/ (.*)/)[1])
+				$("#sloveso_6_nj").val(fields[3].split(" ")[1])
 			}
 			
 			function GetSuperText(text) {
@@ -159,12 +195,18 @@
 				$("#sloveso_3_njpreteritum").removeClass('is-invalid');
 				$("#sloveso_4_njperfektum").removeClass('is-valid');
 				$("#sloveso_4_njperfektum").removeClass('is-invalid');
+				$("#sloveso_5_nj").removeClass('is-valid');
+				$("#sloveso_5_nj").removeClass('is-invalid');
+				$("#sloveso_6_nj").removeClass('is-valid');
+				$("#sloveso_6_nj").removeClass('is-invalid');
 			}
 			
 			function clearText() {
 				$("#sloveso_2_nj").val("")
 				$("#sloveso_3_njpreteritum").val("")
 				$("#sloveso_4_njperfektum").val("")
+				$("#sloveso_5_nj").val("")
+				$("#sloveso_6_nj").val("")
 			}
 		</script>
 	</body>
